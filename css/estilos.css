@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Fuzzy+Bubbles&family=Grandstander:wght@100&family=Roboto+Mono:wght@300&display=swap');
+
+*{margin: 0;
+padding: 0; 
+}
+
+
+/*GRID*/
+/*generales*/
+
+.gridBody {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "nav" "main" "footer";
+	}
+.gridSubMain {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "intro intro" 
+	"fotos fotos" "table map";
+	grid-gap: 2rem;
+	}
+
+/*grid areas*/
+
+.gridNav {
+	grid-area: nav;
+	width: 100%;
+	}
+.gridMain {
+	grid-area: main;
+	}
+.gridFooter {
+	grid-area: footer;
+	}
+.gridIntro {
+	grid-area: intro;
+	justify-items: center;
+	}
+.gridFotos {
+	grid-area: fotos;
+	}
+.gridTable {
+	grid-area: table;
+	margin: 1rem auto;
+	}
+.gridMap {
+	grid-area: map;
+	justify-content: space-between;
+	margin: 1rem;
+	}
+
+
+/*ESTILOS*/
+/*generales*/
+
+html{
+	font-size: 1.4rem; 
+	font-family: 'Architects Daughter', cursive;
+	color: darkgreen;
+	line-height: 1.7rem;
+	box-sizing: border-box;
+	background-image: url(../img/wall.png);
+	background-color: lightgreen;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow-x: hidden;
+	}
+
+.tituH1 {
+	text-align: center;
+	font-size: 2.7rem;
+	color: #5F1A73;
+	font-family:'Caveat', cursive;
+	margin: 1.5rem auto;
+	}
+.tituH2 {
+	text-align: center;
+	font-size: 1.8rem;
+	color: #9D0B0B;
+	font-family:'Architects Daughter', cursive;
+	margin: 5px auto;
+	}
+.tituH3 {
+	font-size: 1.4rem;
+	font-family: 'Architects Daughter', cursive;
+	text-align: center;
+	color: darkgreen;
+	margin: 0.8rem auto;
+	}
+.listas {
+	list-style-type: disc;
+	list-style-position: inside;
+	}
+.w100 {
+	width: 100%;
+	}
+.figures {
+	text-align: center;
+	font-size: xx-large;
+	font-family:'Caveat', cursive;
+	font-size: 3rem; 
+	color: #5F1A73;
+	margin: 10px auto;
+	}
+.figure {
+	border: solid 2px #5F1A73;
+	border-radius: 5px;
+	margin: 10px auto;
+	width: 99%;
+	}
+.figCap {
+	margin: 1.2rem auto
+	}
+
+
+/*NAV*/
+
+.logo {
+	color: darkgreen;
+	font-family:'Caveat', cursive;
+	font-size: x-large;
+	
+	}
+.vegg {
+	margin-top: -20px;
+	margin-left: 10px;
+	}
+nav {
+	width: 100%;
+	background-color: rgba(174, 234, 181, 0.5);
+	}
+nav ul {display: inline-block;}	
+nav ul a {
+	font-size: x-large;
+	text-decoration: none;
+	list-style: none;
+	color:  darkgreen;
+	}
+ul a:hover {
+	font-weight: bolder;
+	}
+
+.menu >li {
+	position: relative;
+	display: inline-block;
+	}
+.menu >li >a {
+	display: block;
+	}
+.subMenu {
+	list-style: none;
+	position: absolute;
+	width: 100%;
+	display: none;
+	background-color: rgba(174, 234, 181, 0.8);
+	line-height: 3rem;
+	}
+.subMenu li a {
+	display: block;
+	}
+.menu li:hover .subMenu {
+	display: block;
+	}
+.flexNav {
+	display: flex;
+	justify-content: space-between;
+	}
+.flexMenu {
+	display: flex;
+	width: 70%;
+	justify-content: space-around;
+	align-self: center;
+	}
+.iconosNav {
+	display: none;
+	}	
+
+
+/*MAIN*/
+
+.mainA {
+	border: solid 4px darkgreen;
+	border-radius: 2rem;
+	background-color: rgba(174, 234, 181, 0.5);
+	width: 60%;
+	margin: 1.4rem auto;
+	}
+.veggiecita {
+	text-align: center;
+	font-size: 3rem;
+	color: darkgreen;
+	font-family: 'Caveat', cursive; 
+	margin: 1rem auto;
+	}	
+.mainP {
+	text-align: center;
+	font-size:x-large;
+	color: #5F1A73;
+	} 
+.mainF:hover {
+	outline: solid 4px #5F1A73;
+	}
+.flexFotos {
+	display: flex;
+	justify-content: space-around;
+	}
+
+
+/*TABLE*/
+
+table {
+	background-color: rgba(174, 234, 181, 0.5);
+	width: 40%;
+	margin: auto;
+	text-align: center;
+	border: solid 1px darkgreen;
+	}
+table,th,td,tr {
+	border-color: darkgreen;
+	border-bottom: solid 1px;
+	border-collapse: collapse;
+	padding: 2px;	
+	}
+th {
+	background-color: #A9F7AD;
+	}
+tr:hover {
+	background-color:#A9F7AD;
+	}	
+.flexTable {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	}
+
+
+/*MAP*/
+
+.figureMap {
+	border: solid 2px darkgreen;
+	border-radius: 5px;
+	align-self: center;
+	}
+.flexMap {
+	display: flex;
+	flex-direction: column;
+	}
+	
+
+/*DIPS SALADAS DULCES*/
+
+.figuresGaleria {
+	border: solid 2px darkgreen;
+	border-radius: 2px;
+	width: 80%;
+	}
+.figuresGaleria:hover {
+	outline: solid darkgreen;
+	}
+.figCapGaleria {
+	color:#5F1A73;
+	font-size: larger;
+	text-align: center;
+	}
+.marginSection {
+	margin-top: 4rem;
+	}
+.flexRecetas {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	}
+.flexProced {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 99%;
+	}
+.flexCenter {
+	align-self: center;
+	width: 35%;
+	}
+.flexCenterProc {
+	align-self: center; 
+	width: 80%; 
+	text-align: center;
+	}
+.flexGaleria {
+	display: flex;
+	justify-content: center;
+    }
+    
+
+/*FORM*/
+
+legend {
+	margin: auto;
+	font-family: 'Architects Daughter', cursive; 
+	font-size: larger;
+	font-weight: bolder;
+	}
+label {
+	font-size: 1.2rem;
+	display: inline-block;
+	text-align: center;
+	}
+input, select, textarea {
+	border: solid 1px darkgreen;
+	border-radius: 4px;
+	box-shadow: 2px 4px 6px 0 darkgreen;
+	background-color: #F0F8D2;
+	font-family:'Architects Daughter', cursive;
+	font-size: large;
+	color: darkgreen;
+	padding: 5px;
+	margin: 0.5rem;
+	text-align: center;
+	}
+.botones:hover {
+	background-color: darkgreen;
+	opacity: 0.8;
+	color:#F0F8D2;
+	cursor: pointer;
+	}
+.flexForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+.flexFieldset {
+	display: flex;
+	justify-content: center;
+	margin: 1rem;
+	padding: 0.5rem;
+	align-items: center;
+	text-align: center;
+	}
+
+
+/*FOOTER*/
+
+footer {
+	width: 100%;	
+	background-color: rgba(174, 234, 181, 0.5);
+	}
+.flexFooter {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2rem;
+	align-items: center;
+	}
+.flexIcons {
+	display: flex;
+	justify-content: center;
+	width: 35%;
+	justify-content: space-around;
+	}
+
+
+/*MEDIAQ 850*/
+
+@media only screen and (max-width: 850px) 
+{
+	/*INDEX*/
+	.gridSubMain {
+		display: grid;
+		width: 100%;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: "intro" "fotos" "table" "map";
+		grid-gap: 0;
+		}
+	.mainF { 
+		width: 70%;
+		}
+	.figures {
+		font-size: 2rem;
+		}
+	.figCap {
+		margin: 0.5rem;
+		}	
+		
+	/*dips salados dulces*/
+	.flexRecetas {
+		flex-direction: column;
+		align-items: center;
+		}
+	.figuresGaleria {width: 65%;}	
+	.flexCenter {
+		width: 50%
+		}
+	.flexGaleria {
+		flex-direction: column;
+		align-items: center;
+		}
+	.listasIngredientes {
+		width: 80%
+		}
+	.marginSection {
+		margin-top: 1rem;
+		}
+
+	/*contacto*/
+	.flexFieldset {
+		flex-direction: column;
+		}
+	.inputNombreApellido {
+		width: 60%
+		}	
+}
+
+
+/*MEDIAQ 450*/
+
+@media only screen and (max-width: 450px) 
+{
+	/*nav*/
+	.flexMenu {
+		display: none;
+		}
+	.iconosNav {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: flex-end;
+		width: 60%;
+		color: darkgreen;
+		}
+	.logoV {margin-bottom: -0.5rem}
+	.vegg {display: none;}
+
+	/*generales*/
+	.tituH2 {
+		font-size: 1.2rem;
+		}
+	.flexCenter {width: 70%} 
+	.figCap {margin: 0}
+	.mainA {width: 75%}	
+	.mainF { 
+		width: 80%;
+		}
+
+	/*dips saladas dulces*/	
+	.flexFotos {
+		flex-direction: column;
+		}
+	.figCapGaleria {
+		width: 60%
+		}
+	.gridSubMain {
+		grid-gap: 0;
+		}
+	.fontTable450 {
+		font-size: 0.8rem;
+		}	
+}
