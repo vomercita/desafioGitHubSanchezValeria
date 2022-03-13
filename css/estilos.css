@@ -75,13 +75,15 @@ html{
 	text-align: center;
 	font-size: 2.7rem;
 	color: #5F1A73;
+	text-shadow: 1px 1px 2px rgba(83, 0, 100, 0.507);
 	font-family:'Caveat', cursive;
 	margin: 1.5rem auto;
 	}
 .tituH2 {
 	text-align: center;
 	font-size: 1.8rem;
-	color: #9D0B0B;
+	color: rgb(157, 11, 11);
+	text-shadow: 1px 1px 1px rgba(157, 11, 11, 0.685);
 	font-family:'Architects Daughter', cursive;
 	margin: 5px auto;
 	}
@@ -105,10 +107,11 @@ html{
 	font-family:'Caveat', cursive;
 	font-size: 3rem; 
 	color: #5F1A73;
+	text-shadow: 1px 1px 2px rgba(83, 0, 100, 0.507);
 	margin: 10px auto;
 	}
 .figure {
-	border: solid 2px #5F1A73;
+	box-shadow: 4px 4px 15px 4px #601a73b4;
 	border-radius: 5px;
 	margin: 10px auto;
 	width: 99%;
@@ -129,10 +132,12 @@ html{
 .vegg {
 	margin-top: -20px;
 	margin-left: 10px;
+	text-shadow: 1px 1px 2px rgba(0, 100, 0, 0.507);
 	}
 nav {
 	width: 100%;
-	background-color: rgba(174, 234, 181, 0.5);
+	background: linear-gradient(to right,rgba(60, 233, 80, 0.3), 
+	rgba(146, 119, 245, 0.3));
 	}
 nav ul {display: inline-block;}	
 nav ul a {
@@ -144,7 +149,6 @@ nav ul a {
 ul a:hover {
 	font-weight: bolder;
 	}
-
 .menu >li {
 	position: relative;
 	display: inline-block;
@@ -155,17 +159,21 @@ ul a:hover {
 .subMenu {
 	list-style: none;
 	position: absolute;
-	width: 100%;
+	width: 150%;
 	display: none;
-	background-color: rgba(174, 234, 181, 0.8);
+	background-color: rgba(174, 234, 181, 0.918);
 	line-height: 3rem;
+	border-radius: 1rem;
+	padding-left: 1rem;
 	}
 .subMenu li a {
 	display: block;
 	}
+	
 .menu li:hover .subMenu {
 	display: block;
 	}
+ 
 .flexNav {
 	display: flex;
 	justify-content: space-between;
@@ -184,14 +192,16 @@ ul a:hover {
 /*MAIN*/
 
 .mainA {
-	border: solid 4px darkgreen;
-	border-radius: 2rem;
-	background-color: rgba(174, 234, 181, 0.5);
+	padding: 5px;
+	border-radius: 30% 30% 10% 10%;
+	background: radial-gradient(circle, rgba(111, 193, 231, 0.445) 0%, rgba(195,6,242,0.2049194677871149) 90%);
 	width: 60%;
 	margin: 1.4rem auto;
+	box-shadow: 4px 4px 15px 0 #601a738f;
 	}
 .veggiecita {
 	text-align: center;
+	text-shadow: 1px 1px 2px rgba(0, 100, 0, 0.507);
 	font-size: 3rem;
 	color: darkgreen;
 	font-family: 'Caveat', cursive; 
@@ -203,7 +213,7 @@ ul a:hover {
 	color: #5F1A73;
 	} 
 .mainF:hover {
-	outline: solid 4px #5F1A73;
+	box-shadow: 0.5rem 0.5rem 4rem 0 rgba(197, 111, 255, 0.932);
 	}
 .flexFotos {
 	display: flex;
@@ -214,7 +224,7 @@ ul a:hover {
 /*TABLE*/
 
 table {
-	background-color: rgba(174, 234, 181, 0.5);
+	background-color: #3dfa4a2d;
 	width: 40%;
 	margin: auto;
 	text-align: center;
@@ -226,11 +236,13 @@ table,th,td,tr {
 	border-collapse: collapse;
 	padding: 2px;	
 	}
-th {
-	background-color: #A9F7AD;
+.tableHead {
+	background: linear-gradient(to left,rgba(60, 233, 80, 0.3), 
+	rgba(146, 119, 245, 0.3));
 	}
 tr:hover {
-	background-color:#A9F7AD;
+	background: linear-gradient(to left,rgba(60, 233, 80, 0.3), 
+	rgba(146, 119, 245, 0.3));
 	}	
 .flexTable {
 	display: flex;
@@ -242,7 +254,7 @@ tr:hover {
 /*MAP*/
 
 .figureMap {
-	border: solid 2px darkgreen;
+	border: solid 1px darkgreen;
 	border-radius: 5px;
 	align-self: center;
 	}
@@ -255,12 +267,12 @@ tr:hover {
 /*DIPS SALADAS DULCES*/
 
 .figuresGaleria {
-	border: solid 2px darkgreen;
-	border-radius: 2px;
+	box-shadow: 4px 4px 15px 1px rgba(0, 100, 0, 0.918);
+	border-radius: 4px;
 	width: 80%;
 	}
 .figuresGaleria:hover {
-	outline: solid darkgreen;
+	box-shadow: 0.5rem 0.5rem 4rem 0 rgba(169, 81, 228, 0.76);
 	}
 .figCapGaleria {
 	color:#5F1A73;
@@ -270,6 +282,7 @@ tr:hover {
 .marginSection {
 	margin-top: 4rem;
 	}
+		
 .flexRecetas {
 	display: flex;
 	justify-content: space-around;
@@ -279,7 +292,13 @@ tr:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 99%;
+	width: 75%;
+	margin: auto;
+	margin-top: 1.4rem;
+	box-shadow: 5px 5px 15px 0 rgba(20, 71, 37, 0.253);
+	border-radius: 30% 30% 5% 5%;
+	background: linear-gradient(to right,rgba(60, 233, 80, 0.116), 
+	rgba(146, 119, 245, 0.123)); 
 	}
 .flexCenter {
 	align-self: center;
@@ -287,8 +306,9 @@ tr:hover {
 	}
 .flexCenterProc {
 	align-self: center; 
-	width: 80%; 
+	width: 85%; 
 	text-align: center;
+	margin-bottom: 1rem;
 	}
 .flexGaleria {
 	display: flex;
@@ -313,7 +333,7 @@ input, select, textarea {
 	border: solid 1px darkgreen;
 	border-radius: 4px;
 	box-shadow: 2px 4px 6px 0 darkgreen;
-	background-color: #F0F8D2;
+	background-color: #f0f8d2b4;
 	font-family:'Architects Daughter', cursive;
 	font-size: large;
 	color: darkgreen;
@@ -326,6 +346,8 @@ input, select, textarea {
 	opacity: 0.8;
 	color:#F0F8D2;
 	cursor: pointer;
+	transform: scale(1.2);
+	transition: transform 4s;
 	}
 .flexForm {
 	display: flex;
@@ -333,6 +355,9 @@ input, select, textarea {
 	align-items: center;
 	}
 .flexFieldset {
+	background: rgba(60, 233, 80, 0.212);
+	border-color: rgba(0, 100, 0, 0.404);
+	border-radius: 0.5rem;
 	display: flex;
 	justify-content: center;
 	margin: 1rem;
@@ -346,7 +371,8 @@ input, select, textarea {
 
 footer {
 	width: 100%;	
-	background-color: rgba(174, 234, 181, 0.5);
+	background: linear-gradient(to left,rgba(60, 233, 80, 0.3), 
+	rgba(146, 119, 245, 0.3));
 	}
 .flexFooter {
 	display: flex;
@@ -362,10 +388,14 @@ footer {
 	}
 
 
+
 /*MEDIAQ 850*/
 
 @media only screen and (max-width: 850px) 
 {
+	/*nav*/
+	.subMenu {line-height: 1.5rem;}
+	
 	/*INDEX*/
 	.gridSubMain {
 		display: grid;
@@ -375,6 +405,9 @@ footer {
 		grid-template-areas: "intro" "fotos" "table" "map";
 		grid-gap: 0;
 		}
+	.barra {
+			height: 5rem;
+		}
 	.mainF { 
 		width: 70%;
 		}
@@ -383,14 +416,18 @@ footer {
 		}
 	.figCap {
 		margin: 0.5rem;
-		}	
+		}
+
 		
+
 	/*dips salados dulces*/
 	.flexRecetas {
 		flex-direction: column;
 		align-items: center;
 		}
-	.figuresGaleria {width: 65%;}	
+	.figuresGaleria {
+		width: 65%;
+		}	
 	.flexCenter {
 		width: 50%
 		}
@@ -430,19 +467,33 @@ footer {
 		width: 60%;
 		color: darkgreen;
 		}
-	.logoV {margin-bottom: -0.5rem}
-	.vegg {display: none;}
+	.logoV {
+		margin-bottom: -0.5rem
+		}
+	.vegg {
+		display: none;
+		}
 
 	/*generales*/
 	.tituH2 {
 		font-size: 1.2rem;
 		}
-	.flexCenter {width: 70%} 
-	.figCap {margin: 0}
-	.mainA {width: 75%}	
-	.mainF { 
+	.flexCenter {
+		width: 70%
+		} 
+	.figCap {
+		margin: 0
+		}
+	.mainA {
+		width: 75%
+		}	
+	.mainF {
 		width: 80%;
 		}
+	.barra {
+		height: 1rem;
+		}
+
 
 	/*dips saladas dulces*/	
 	.flexFotos {
@@ -451,10 +502,40 @@ footer {
 	.figCapGaleria {
 		width: 60%
 		}
+	.tituH3 {font-size: 1.2rem;}	
 	.gridSubMain {
 		grid-gap: 0;
 		}
+	.flexProced {
+		border-radius: 15% 15% 5% 5%;
+		}
+	
+	/*table*/	
 	.fontTable450 {
 		font-size: 0.8rem;
-		}	
+		}
+			
 }
+
+/*ANIMACIONES*/
+
+@keyframes barra {
+	0% {background-image: url(../img/1index163.jpg);}
+	25% {background-image: url(../img/2walldips163.jpg);}
+	50% {background-image: url(../img/3wallsalados163.jpg);}
+	75% {background-image: url(../img/4walldulces163.jpg);}
+	100% {background-image: url(../img/5.jpg);}
+	}
+
+.barra {
+	height: 7rem;
+	width: 100%;
+	animation-name: barra;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-duration: 25s;
+	background-size: cover;
+	background-position: center;
+	
+	}		
+
